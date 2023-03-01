@@ -20,7 +20,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
+        android:id="@+id/textoUsuario"
         android:layout_width="249dp"
         android:layout_height="56dp"
         android:ems="10"
@@ -33,7 +33,7 @@
         app:layout_constraintVertical_bias="0.25" />
 
     <EditText
-        android:id="@+id/editTextTextPassword3"
+        android:id="@+id/textoPWD"
         android:layout_width="249dp"
         android:layout_height="56dp"
         android:ems="10"
@@ -43,17 +43,18 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3"
+        app:layout_constraintTop_toBottomOf="@+id/textoUsuario"
         app:layout_constraintVertical_bias="0.252" />
 
     <Button
         android:id="@+id/btnAceptar"
         android:layout_width="169dp"
         android:layout_height="72dp"
+        android:layout_marginBottom="76dp"
         android:text="Aceptar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword3" />
+        app:layout_constraintTop_toBottomOf="@+id/textoPWD" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

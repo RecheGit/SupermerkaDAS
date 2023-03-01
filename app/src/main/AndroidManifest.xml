@@ -12,6 +12,12 @@
         android:theme="@style/Theme.SUPERMERKADAS"
         tools:targetApi="31">
         <activity
+            android:name=".Registro"
+            android:exported="false" />
+        <activity
+            android:name=".MenuUsuario"
+            android:exported="false" />
+        <activity
             android:name=".IniciarSesion"
             android:exported="false" />
         <activity

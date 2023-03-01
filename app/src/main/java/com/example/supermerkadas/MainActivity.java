@@ -32,16 +32,7 @@ public class MainActivity extends AppCompatActivity {
                 SQLiteDatabase bd = miDB.getWritableDatabase();
                 Intent intent = new Intent(MainActivity.this, IniciarSesion.class);
                 startActivityIntent.launch(intent);
-                /*
 
-                if (bd != null){
-
-                    Toast.makeText(MainActivity.this, "Creado correctamente",Toast.LENGTH_LONG).show();
-                }
-                else {
-                    Toast.makeText(MainActivity.this, "Creado Incorrectamente",Toast.LENGTH_LONG).show();
-                }
-                */
               // bd.execSQL("INSERT INTO Usuarios ('Nombre','Contraseña') VALUES ('Mikel','123')");
                 // bd.delete("Usuarios","Nombre='Mikel'",null);
                 //Toast.makeText(MainActivity.this, "Eliminado correctamente",Toast.LENGTH_LONG).show();
