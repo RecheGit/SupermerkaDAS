@@ -17,15 +17,17 @@ import com.example.supermerkadas.db.MiDB;
 public class MainActivity extends AppCompatActivity {
 
 
-    Button btnCrear;
+    Button btnIniciarSesion;
+    Button btnRegistrar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        btnCrear = findViewById(R.id.btnIniciarSesion);
+        btnIniciarSesion = findViewById(R.id.btnIniciarSesion);
+        btnRegistrar = findViewById(R.id.btnRegistro);
 
-        btnCrear.setOnClickListener(new View.OnClickListener() {
+        btnIniciarSesion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 MiDB miDB = new MiDB(MainActivity.this);
@@ -34,6 +36,25 @@ public class MainActivity extends AppCompatActivity {
                 startActivityIntent.launch(intent);
 
               // bd.execSQL("INSERT INTO Usuarios ('Nombre','Contraseña') VALUES ('Mikel','123')");
+                // bd.delete("Usuarios","Nombre='Mikel'",null);
+                //Toast.makeText(MainActivity.this, "Eliminado correctamente",Toast.LENGTH_LONG).show();
+
+
+            }
+
+        });
+
+
+
+        btnRegistrar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                MiDB miDB = new MiDB(MainActivity.this);
+                SQLiteDatabase bd = miDB.getWritableDatabase();
+                Intent intent = new Intent(MainActivity.this, Registro.class);
+                startActivity(intent);
+
+                // bd.execSQL("INSERT INTO Usuarios ('Nombre','Contraseña') VALUES ('Mikel','123')");
                 // bd.delete("Usuarios","Nombre='Mikel'",null);
                 //Toast.makeText(MainActivity.this, "Eliminado correctamente",Toast.LENGTH_LONG).show();
 

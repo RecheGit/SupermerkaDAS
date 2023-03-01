@@ -50,37 +50,12 @@ public class IniciarSesion extends AppCompatActivity {
 
                     UsuarioIncorrecto incorrecto = new UsuarioIncorrecto();
                     incorrecto.show(getSupportFragmentManager(),"error");
-
-
                 }
                 else {
-
                     Intent intent = new Intent(IniciarSesion.this, MenuUsuario.class);
                     startActivity(intent);
 
                 }
-
-               // bd.execSQL("INSERT INTO Usuarios ('Nombre','Contraseña') VALUES ('Mikel','123')");
-               /* Cursor c = bd.rawQuery("SELECT Nombre FROM Usuarios WHERE Nombre='Mikel'", null);
-                c.moveToNext();
-                if (c.getString(1) !=null){
-
-                    Toast.makeText(IniciarSesion.this, "Funciona",Toast.LENGTH_LONG).show();
-
-                }*/
-                    /*
-                    if(Nom != null){
-
-                        Toast.makeText(IniciarSesion.this, "Funciona",Toast.LENGTH_LONG).show();
-
-                    }
-                    else{
-                        Toast.makeText(IniciarSesion.this, "Noooooooo",Toast.LENGTH_LONG).show();
-
-                    }*/
-
-
-
             }
         });
     }
